@@ -1,5 +1,5 @@
 // quando executar o "Enter" aciona o botao
-document.getElementById("campo-pesquisa").addEventListener('keydown', function (event) {
+document.getElementById("txtPesquisar").addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         document.getElementById("btnPesquisar").click();
     }
@@ -7,7 +7,7 @@ document.getElementById("campo-pesquisa").addEventListener('keydown', function (
 
 // limpa o campo para uma nova pesquisa
 function cancelar() {
-    document.getElementById('campo-pesquisa').value = '';
+    document.getElementById('txtPesquisar').value = '';
 }
 
 function pesquisar() {
@@ -16,12 +16,12 @@ function pesquisar() {
     let section = document.getElementById("resultados-pesquisa");
 
     // Obtém o valor digitado pelo usuário no campo de pesquisa e converte para minúsculas
-    let campoPesquisa = document.getElementById("campo-pesquisa").value.toLowerCase();
+    let campoPesquisa = document.getElementById("txtPesquisar").value.toLowerCase();
 
     // Verifica se o campo de pesquisa está vazio
     if (!campoPesquisa) {
         // Exibe uma mensagem de erro caso o campo esteja vazio
-        section.innerHTML = "<p>Campo vazio, favor digitar um dado sobre Wisky para pesquisa</p>";
+        section.innerHTML = "<p>Campo vazio, favor digitar algum dado para pesquisa</p>";
         return; // Interrompe a função
     }
 
@@ -59,14 +59,40 @@ function pesquisar() {
         if (nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || classificacao.includes(campoPesquisa) || regiao.includes(campoPesquisa) || idade.includes(campoPesquisa) || prova.includes(campoPesquisa) || finish.includes(campoPesquisa) || notasDeDegustacao.includes(campoPesquisa) || preco.includes(campoPesquisa) || disponibilidade.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
             // Constrói o HTML para cada resultado encontrado
             resultados += `
-                <div class="item-resultado">
+/*                 <div class="item-resultado">
                     <h2>
                         <a href="${dado.classificacao}" target="_blank">${dado.nome}</a>
                     </h2>
                     <p class="descricao-meta">
                         ${dado.descricao}
                     </p>
-                </div>
+                </div> */
+
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-4">   
+
+                    <h2>
+                        <a href="${dado.classificacao}" target="_blank">${dado.nome}</a>
+                    </h2>
+                    <p class="descricao-meta">
+                        ${dado.descricao}
+                    </p>
+                        <img src="imagem1.jpg" alt="Whisky 1">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Whisky 2</h3>
+                        <p>Descrição do whisky 2.</p>
+                        <img src="imagem2.jpg" alt="Whisky 2">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Whisky 3</h3>
+                        <p>Descrição do whisky 3.</p>
+                        <img src="imagem3.jpg" alt="Whisky 3">
+                    </div>
+                    </div>
+                    </div>
+
             `;
         }
     }

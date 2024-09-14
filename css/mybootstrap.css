@@ -1,9 +1,6 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* Define a fonte padrão */
     background-color: #DDDDDD;
     /* Cor de fundo da página */
@@ -13,9 +10,7 @@ body {
     /* Alinha os itens na vertical */
     align-items: center;
     /* Centraliza os itens horizontalmente */
-    justify-content: center;
-    /* Centraliza os itens verticalmente */
-    height: 100vh;
+    /* height: 100vh; */
     /* Preenche a altura total da viewport */
     margin: 0;
     /* Remove a margem padrão */
@@ -23,16 +18,31 @@ body {
     /* Remove o padding padrão */
 }
 
+header {
+    color: #fff;
+    padding: 2rem;
+}
+
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 3.5rem;
+    font-family: 'Old Standard TT', serif;
+    font-size: 3rem;
     /* Tamanho da fonte */
     color: #222831;
     /* Cor do texto */
     text-align: center;
     /* Alinha o texto ao centro */
-    letter-spacing: 0.9rem;
+    letter-spacing: 0.4rem;
     /* Espaçamento entre letras */
+}
+
+.input-group {
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.btn:hover {
+    background-color: #0056b2;
 }
 
 /* Estiliza o rodapé da página */
@@ -53,4 +63,18 @@ footer {
     /* Alinha ao fundo da página */
     font-size: 1rem;
     /* Tamanho da fonte */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
+
+.custom-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+/* Adicione mais estilos conforme necessário */
