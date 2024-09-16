@@ -59,41 +59,14 @@ function pesquisar() {
         if (nome.includes(campoPesquisa) || descricao.includes(campoPesquisa) || classificacao.includes(campoPesquisa) || regiao.includes(campoPesquisa) || idade.includes(campoPesquisa) || prova.includes(campoPesquisa) || finish.includes(campoPesquisa) || notasDeDegustacao.includes(campoPesquisa) || preco.includes(campoPesquisa) || disponibilidade.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
             // Constrói o HTML para cada resultado encontrado
             resultados += `
-/*                 <div class="item-resultado">
+                 <div class="item-resultado">
                     <h2>
                         <a href="${dado.classificacao}" target="_blank">${dado.nome}</a>
                     </h2>
                     <p class="descricao-meta">
                         ${dado.descricao}
                     </p>
-                </div> */
-
-                <div class="container">
-                    <div class="row">
-                    <div class="col-md-4">   
-
-                    <h2>
-                        <a href="${dado.classificacao}" target="_blank">${dado.nome}</a>
-                    </h2>
-                    <p class="descricao-meta">
-                        ${dado.descricao}
-                    </p>
-                        <img src="imagem1.jpg" alt="Whisky 1">
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Whisky 2</h3>
-                        <p>Descrição do whisky 2.</p>
-                        <img src="imagem2.jpg" alt="Whisky 2">
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Whisky 3</h3>
-                        <p>Descrição do whisky 3.</p>
-                        <img src="imagem3.jpg" alt="Whisky 3">
-                    </div>
-                    </div>
-                    </div>
-
-            `;
+                </div> `
         }
     }
 
