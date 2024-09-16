@@ -307,8 +307,3 @@ let dados = [
         tags: "blended scotch whisky suave equilibrado frutas cítricas mel especiarias"
     }
 ];
-
-
-
-
-
