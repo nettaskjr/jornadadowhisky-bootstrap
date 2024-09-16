@@ -5,13 +5,15 @@ document.getElementById("txtPesquisar").addEventListener('keydown', function (ev
     }
 });
 
-// limpa o campo para uma nova pesquisa
 function cancelar() {
+    // limpa a tela
+    // ...
+
+    // limpa o campo para uma nova pesquisa
     document.getElementById('txtPesquisar').value = '';
 }
 
 function pesquisar() {
-
     // Obtém a seção onde os resultados serão exibidos
     let section = document.getElementById("resultados-pesquisa");
 
