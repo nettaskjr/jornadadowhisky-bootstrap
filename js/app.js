@@ -81,4 +81,3 @@ function pesquisar() {
     // Atualiza o conteúdo da seção de resultados com os resultados encontrados
     section.innerHTML = resultados;
 }
-
