@@ -37,7 +37,7 @@ let dados = [
         link: "https://www.johnniewalker.com/pt-br/our-whisky/core-range/johnnie-walker-blue-label",
         degustacao: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Substituir por um link de degustação
         tags: "blended scotch whisky ultra premium maltes raros sabor complexo aveludado"
-    }
+    },
     {
         nome: "Buffalo Trace",
         descricao: "Um dos bourbons mais populares e acessíveis do mercado...",
