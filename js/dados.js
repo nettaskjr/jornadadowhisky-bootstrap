@@ -1,4 +1,5 @@
 /* Relação dos Wiskeys cadastrados
+20: "Johnnie Walker Blue Label"
 19: "Buffalo Trace",
 18: "Glenfiddich 12 anos",
 17: "Jameson",
@@ -21,6 +22,22 @@
 */
 
 let dados = [
+    {
+        nome: "Johnnie Walker Blue Label",
+        descricao: "Um blended scotch whisky ultra premium, produzido a partir de maltes raros e com um sabor complexo e aveludado.",
+        imagem: "https://www.johnniewalker.com/content/dam/johnniewalker/global/en/our-whisky/core-range/johnnie-walker-blue-label/johnnie-walker-blue-label-bottle.jpg",
+        classificacao: "Blended Scotch Whisky",
+        regiao: "Escócia",
+        idade: "Variação",
+        prova: "40%",
+        finish: "Nenhum",
+        notasDeDegustacao: "Frutas, mel, especiarias, leve toque de fumaça",
+        preco: "Alto",
+        disponibilidade: "Baixa",
+        link: "https://www.johnniewalker.com/pt-br/our-whisky/core-range/johnnie-walker-blue-label",
+        degustacao: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", // Substituir por um link de degustação
+        tags: "blended scotch whisky ultra premium maltes raros sabor complexo aveludado"
+    }
     {
         nome: "Buffalo Trace",
         descricao: "Um dos bourbons mais populares e acessíveis do mercado...",
@@ -123,7 +140,7 @@ let dados = [
         preco: "Médio",
         disponibilidade: "Fácil de encontrar",
         link: "https://www.casadabebida.com.br/whisky/whisky-old-parr-12-anos/",
-        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7184174615420308742", 
+        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7184174615420308742",
         tags: "blended scotch whisky escoces tradicional frutas secas mel"
     },
     {
@@ -168,7 +185,7 @@ let dados = [
         preco: "Médio",
         disponibilidade: "Fácil de encontrar",
         link: "https://www.casadabebida.com.br/buchanans/",
-        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7211275882621635846 ", 
+        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7211275882621635846 ",
         tags: "blended scotch whisky escoces suave frutas secas mel"
     },
     {
@@ -183,7 +200,7 @@ let dados = [
         preco: "Alto",
         disponibilidade: "Moderada",
         link: "https://www.suntory.com/whisky/hakushu/",
-        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7199347438115769605", 
+        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7199347438115769605",
         tags: "single malt japones floral fresco suntory"
     },
     {
@@ -198,7 +215,7 @@ let dados = [
         preco: "Alto",
         disponibilidade: "Moderada",
         link: "https://www.suntory.com/whisky/yamazaki/",
-        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7234641607767674117", 
+        degustacao: "https://www.tiktok.com/@jornadadowhisky/video/7234641607767674117",
         tags: "single malt japones complexo suntory yamazaki"
     },
     {
@@ -288,7 +305,7 @@ let dados = [
         preco: "Médio-Alto",
         disponibilidade: "Moderada",
         link: "https://www.talisker.com/",
-        degustacao: "https://www.instagram.com/reel/Cw7tZgzs4mN/", 
+        degustacao: "https://www.instagram.com/reel/Cw7tZgzs4mN/",
         tags: "single malt escoces torfado fumaça especiarias"
     },
     {
