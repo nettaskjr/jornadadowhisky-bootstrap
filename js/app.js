@@ -1,3 +1,11 @@
+function showAlert() {
+    var alertMessage = document.getElementById('alertMessage');
+    alertMessage.style.display = 'block';
+    setTimeout(function() {
+        alertMessage.style.display = 'none';
+    }, 3000); // A mensagem será exibida por 3 segundos
+}
+
 // quando executar o "Enter" aciona o botao
 document.getElementById("txtPesquisar").addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
@@ -23,7 +31,13 @@ function pesquisar() {
     // Verifica se o campo de pesquisa está vazio
     if (!campoPesquisa) {
         // Exibe uma mensagem de erro caso o campo esteja vazio
-        section.innerHTML = "<p>Campo vazio, favor digitar algum dado para pesquisa</p>";
+        let msgPesquisa = "";
+        msgPesquisa = `
+            <div class="alert alert-danger alert-top" id="alertMessage">
+                Valor obrigatório não foi digitado!
+            </div>
+        `
+        section.innerHTML = msgPesquisa;
         return; // Interrompe a função
     }
 
@@ -41,7 +55,6 @@ function pesquisar() {
     let tags = "";
 
     let resultados = "";
-
 
     // Itera sobre os dados e busca por correspondências
     for (let dado of dados) {
@@ -65,7 +78,7 @@ function pesquisar() {
                     <h2>
                         <a href="${dado.classificacao}" target="_blank">${dado.nome}</a>
                     </h2>
-                    <p class="descricao-meta">
+                    <p class="descricao-meta">F
                         ${dado.descricao}
                     </p>
                 </div> `

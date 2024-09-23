@@ -10,7 +10,7 @@ body {
     /* Alinha os itens na vertical */
     align-items: center;
     /* Centraliza os itens horizontalmente */
-    /* height: 100vh; */
+    height: 100vh;
     /* Preenche a altura total da viewport */
     margin: 0;
     /* Remove a margem padrão */
@@ -43,6 +43,14 @@ h1 {
 
 .btn:hover {
     background-color: #0056b2;
+}
+
+.alert-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   /*  display: none; */
 }
 
 /* Estiliza o rodapé da página */
