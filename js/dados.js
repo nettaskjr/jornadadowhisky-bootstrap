@@ -1,4 +1,4 @@
-/* Relação dos Wiskeys cadastrados
+/* Relação dos Whiskeys cadastrados
 20: "Johnnie Walker Blue Label"
 19: "Buffalo Trace",
 18: "Glenfiddich 12 anos",

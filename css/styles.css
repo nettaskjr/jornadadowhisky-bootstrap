@@ -20,7 +20,7 @@ body {
 
 header {
     color: #fff;
-    padding: 2rem;
+    padding: 5rem;
 }
 
 /* Estiliza os títulos h1 */
@@ -36,21 +36,19 @@ h1 {
     /* Espaçamento entre letras */
 }
 
-.input-group {
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-.btn:hover {
-    background-color: #0056b2;
-}
-
 .alert-top {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-   /*  display: none; */
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.alert-top.show {
+    display: block;
+    opacity: 1;
 }
 
 /* Estiliza o rodapé da página */

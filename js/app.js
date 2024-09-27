@@ -1,17 +1,20 @@
-function showAlert() {
-    var alertMessage = document.getElementById('alertMessage');
-    alertMessage.style.display = 'block';
-    setTimeout(function() {
-        alertMessage.style.display = 'none';
-    }, 3000); // A mensagem será exibida por 3 segundos
-}
-
-// quando executar o "Enter" aciona o botao
+// quando executar o "Enter" aciona o botão
 document.getElementById("txtPesquisar").addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         document.getElementById("btnPesquisar").click();
     }
 });
+
+function showAlert() {
+    var alertMessage = document.getElementById('alertMessage');
+    alertMessage.classList.add('show');
+    setTimeout(function() {
+        alertMessage.classList.remove('show');
+        setTimeout(function() {
+            alertMessage.style.display = 'none';
+        }, 500); // Tempo para a transição de saída
+    }, 3000); // A mensagem será exibida por 3 segundos
+}
 
 function cancelar() {
     // limpa a tela
@@ -34,10 +37,11 @@ function pesquisar() {
         let msgPesquisa = "";
         msgPesquisa = `
             <div class="alert alert-danger alert-top" id="alertMessage">
-                Valor obrigatório não foi digitado!
+                Digite algum dado para iniciar a pesquisa
             </div>
         `
         section.innerHTML = msgPesquisa;
+        showAlert();
         return; // Interrompe a função
     }
 
@@ -78,7 +82,7 @@ function pesquisar() {
                     <h2>
                         <a href="${dado.classificacao}" target="_blank">${dado.nome}</a>
                     </h2>
-                    <p class="descricao-meta">F
+                    <p class="descricao-meta">
                         ${dado.descricao}
                     </p>
                 </div> `
